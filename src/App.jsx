@@ -6,10 +6,10 @@ function App() {
 
  // var nome = "yuri alberto"
 
-    return (
-      <div>
-        <h3>Pizzzaria 2F</h3>
-        <input 
+ const Formulario = () => {
+  return (
+    <div>
+      <input 
         className="nome"
         name="nome"
         onChange= {(e)=>{setNome(e.target.value)}}
@@ -20,6 +20,17 @@ function App() {
         onClick={()=>{alert(nome)}}>
           CLIQUE AQUI        
         </button>
+    </div>
+  )
+ }
+
+    return (
+      <div>
+        <h3>Pizzzaria 2F</h3>
+        <Formulario/>
+        <Formulario/>
+        <Formulario/>
+
       </div>
     )
 }
